@@ -1,0 +1,22 @@
+[
+  {
+    "code": "NYC",
+    "name": "New York Explorer",
+    "length": "3 days",
+    "start": "2025-06-15",
+    "resort": "Hotel Manhattan",
+    "perPerson": 599,
+    "image": "images/newyork.jpg",
+    "description": "Explore the city that never sleeps - New York!"
+  },
+  {
+    "code": "LON",
+    "name": "London Adventure",
+    "length": "5 days",
+    "start": "2025-07-01",
+    "resort": "Westminster Inn",
+    "perPerson": 799,
+    "image": "images/london.jpg",
+    "description": "Discover London’s rich history and vibrant life!"
+  }
+]
