@@ -6,6 +6,8 @@ const exphbs = require('express-handlebars');
 require('./app_server/models/db');
 
 const app = express();
+const apiRoutes = require('./app_server/routes/api');
+app.use('/api', apiRoutes);
 const PORT = process.env.PORT || 3000;
 
 // Setup Handlebars view engine
@@ -21,7 +23,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Register routes
-const apiRoutes = require('./app_server/routes/api');
 app.use('/api', apiRoutes);
 
 const travelRoutes = require('./app_server/routes/travel');
