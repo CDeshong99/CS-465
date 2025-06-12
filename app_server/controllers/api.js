@@ -19,7 +19,7 @@ const getTripById = async (req, res) => {
     }
     res.status(200).json(trip);
   } catch (err) {
-    res.status(400).json({ message: 'Invalid trip ID', error: err });
+    res.status(400).json({ message: 'Invalid trip ID format', error: err.message });
   }
 };
 
